@@ -38,6 +38,7 @@
         ul {
             list-style: none;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             margin: 0;
 

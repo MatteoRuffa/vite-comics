@@ -89,8 +89,11 @@
 <style lang="scss" scoped>
 @use '../assets/style/partials/variables' as *;
     section {
-        background-image: url('/img/footer-bg.jpg');
-        padding: 40px 0;
+        background-image: url('/img/dc-logo-bg.png'), url('/img/footer-bg.jpg');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 600px, cover;
+        background-position: calc(100% - 250px), center;
+        padding: 60px 0;
         
 
         .container {

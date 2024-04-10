@@ -2,11 +2,39 @@
     <section>
         <div class="container">
             <div>
-                <div><h5>dc comics</h5></div>
-                <div><h5>shop</h5></div>
+                <div>
+                    <h5>dc comics</h5>
+                    <ul>
+                        <li v-for="item in links.dccomics" :key="item.name">
+                            <a :href="item.link">{{ item.name }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>shop</h5>
+                    <ul>
+                        <li v-for="item in links.shop" :key="item.name">
+                            <a :href="item.link">{{ item.name }}</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div><h5>dc</h5></div>
-            <div><h5>sites</h5></div>
+            <div>
+                <h5>dc</h5>
+                <ul>
+                    <li v-for="item in links.dc" :key="item.name">
+                        <a :href="item.link">{{ item.name }}</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>sites</h5>
+                <ul>
+                    <li v-for="item in links.sites" :key="item.name">
+                        <a :href="item.link">{{ item.name }}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </section>
@@ -15,7 +43,47 @@
 <script>
     export default {
         name: 'SectionLinkFooter',
+        data () {
+            return {
+                links: {
+                    dccomics: [
+                        {name: 'Characters', link: '#'},
+                        {name: 'Comics', link: '#'},
+                        {name: 'Movies', link: '#'},
+                        {name: 'TV', link: '#'},
+                        {name: 'Games', link: '#'},
+                        {name: 'Videos', link: '#'},
+                        {name: 'News', link: '#'}
+                    ],
+                    shop: [
+                        {name: 'Shop DC', link: '#'},
+                        {name: 'Shop DC Collectibles', link: '#'}
+                    ],
+                    dc: [
+                        {name: 'Terms Of Use', link: '#'},
+                        {name: 'Privacy policy (New)', link: '#'},
+                        {name: 'Ad Choices', link: '#'},
+                        {name: 'Advertising', link: '#'},
+                        {name: 'Jobs', link: '#'},
+                        {name: 'Subscriptions', link: '#'},
+                        {name: 'Talent Workshops', link: '#'},
+                        {name: 'CPSC Certificates', link: '#'},
+                        {name: 'Ratings', link: '#'},
+                        {name: 'Shop Help', link: '#'},
+                        {name: 'Contact Us', link: '#'}
+                    ],
+                    sites: [
+                        {name: 'DC', link: '#'},
+                        {name: 'MAD Magazine', link: '#'},
+                        {name: 'DC Kids', link: '#'},
+                        {name: 'DC Universe', link: '#'},
+                        {name: 'DC Power Visa', link: '#'}
+                    ],
+                },
+            }
+        }
     }
+    
 </script>
 
 <style lang="scss" scoped>
@@ -23,16 +91,27 @@
     section {
         background-image: url('/img/footer-bg.jpg');
         padding: 40px 0;
-        h5 {
-            text-transform: uppercase;
-            color: $light;
-        }
+        
 
         .container {
             display: flex;
             justify-content: start;
             align-items: flex-start;
             gap: 20px;
+            h5 {
+            text-transform: uppercase;
+            color: $light;
+            padding: 10px 0;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                a{
+                    text-decoration: none;
+                    color: $text-gray;
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 

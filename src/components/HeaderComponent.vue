@@ -34,5 +34,30 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/style/partials/variables' as *;
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
 
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $text-dark;
+                text-transform: uppercase;
+                font-weight: 500;
+                padding-bottom: 50px;
+            }
+
+            a:hover {
+                color: $text-hover;
+                border-bottom: 6px solid $text-hover;
+            }
+        }
+    }
 </style>

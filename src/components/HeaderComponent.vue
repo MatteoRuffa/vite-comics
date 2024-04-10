@@ -51,7 +51,7 @@
                 color: $dark;
                 text-transform: uppercase;
                 font-weight: 500;
-                padding-bottom: 50px;
+                padding-bottom: 63px;
             }
 
             a:hover {

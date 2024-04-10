@@ -19,6 +19,7 @@
         h2 {
             color: $light;
             padding: 20px;
+            margin: 0;
         }
     }
 </style>

@@ -48,7 +48,7 @@
 
             a {
                 text-decoration: none;
-                color: $text-dark;
+                color: $dark;
                 text-transform: uppercase;
                 font-weight: 500;
                 padding-bottom: 50px;

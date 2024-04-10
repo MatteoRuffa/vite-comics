@@ -16,6 +16,7 @@
 @use '../assets/style/partials/variables' as *;
     main {
         background-color: $dark;
+        padding: 20px 0;
         h2 {
             color: $light;
             padding: 20px;

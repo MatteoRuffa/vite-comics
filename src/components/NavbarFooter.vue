@@ -34,5 +34,29 @@
 @use '../assets/style/partials/variables' as *;
     section {
         background-color: $text-hover;
+        padding:  20px 0;
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                a {
+                    text-decoration: none;
+                    img {
+                        width: 50px
+                    }
+                    span {
+                        text-transform: uppercase;
+                        color: $light;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
     }
 </style>

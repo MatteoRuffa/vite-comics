@@ -1,6 +1,6 @@
 <template>
     <div>
-
+    --> Contents goes here <--  
     </div>
 </template>
 

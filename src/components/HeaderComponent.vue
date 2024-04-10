@@ -1,12 +1,35 @@
 <template>
-    <div>
-
-    </div>
+    <header class="container">
+        <div><img src="/img/dc-logo.png" alt=""></div>
+        <div>
+            <ul>
+                <li v-for="item in navbar" :key="item.name">
+                    <a :href="item.link">{{ item.name }}</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 </template>
 
 <script>
     export default {
         name: 'HeaderComponent',
+        data () {
+            return {
+                navbar: [
+                    {name: 'Characters', link: '#'},
+                    {name: 'Comics', link: '#'},
+                    {name: 'Movies', link: '#'},
+                    {name: 'TV', link: '#'},
+                    {name: 'Games', link: '#'},
+                    {name: 'Collectibles', link: '#'},
+                    {name: 'Videos', link: '#'},
+                    {name: 'Fans', link: '#'},
+                    {name: 'News', link: '#'},
+                    {name: 'Shop', link: '#'}
+                ]   
+            }
+        }
     }
 </script>
 

@@ -1,7 +1,10 @@
 <template>
     <div class="row">
         <div class="col-12 col-md-4 col-lg-2" v-for="(item, index) in items" :key="index">
-            <div class="image"><img :src="item.thumb" :alt="item.series"></div>
+            <div class="image" @mouseover="item.showPrice = true" @mouseout="item.showPrice = false">
+                <img :src="item.thumb" :alt="item.series">
+                <span class="price" v-if="item.showPrice">{{ item.price }}</span>
+            </div>
             <h5>{{ item.series }}</h5>
         </div>
         <div class="text-center"><a href="#">load more</a></div>
@@ -16,18 +19,30 @@
 </script>
 
 <style lang="scss" scoped>
-    @use '../assets/style/partials/variables' as *;
+@use '../assets/style/partials/variables' as *;
 
     .row {
         .image {
+            position: relative;
             padding: 20px 0;
             img {
-            width: 100%;
-            height: 300px;
+                width: 100%;
+                // height: 300px;
+                transition: opacity 0.3s ease;
+                &:hover {
+                    opacity: 0.3;
+                    
+                    cursor: pointer;
+                }
             }
-            img:hover {
-                cursor: pointer;
-                
+            .price {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $light;
+                font-weight: 700;
+                font-size: 2rem;
             }
         }
         h5 {

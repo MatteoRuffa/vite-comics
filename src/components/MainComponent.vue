@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { comics } from '../data/store';
+import { comicsData } from '../data/store';
 import CardsComponent from './CardsComponent.vue';
     export default {
         name: 'MainComponent',
@@ -17,10 +17,21 @@ import CardsComponent from './CardsComponent.vue';
             CardsComponent,
         },
         data() {
+            const comics = comicsData.map((item) => {
+                return {
+                    thumb: item.thumb,
+                    price: item.price,
+                    series: item.series,
+                    type: item.type,
+                    showPrice: false
+                }
+            })
             return {
                 comics
             }
         },
+        
+        
     }
 </script>
 

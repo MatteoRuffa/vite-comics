@@ -55,7 +55,7 @@ const links = {
     ],
 };
 
-const comics= [
+const comicsData= [
     {
         "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
         "price": "$19.99",
@@ -133,4 +133,4 @@ const comics= [
 export {navbar};
 export {navbarFooter};
 export {links};
-export {comics};
+export {comicsData};

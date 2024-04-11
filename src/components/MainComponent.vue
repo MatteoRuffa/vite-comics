@@ -2,7 +2,7 @@
     <main>
         <div class="jumbotron"></div>
         <div class="container">
-            <h2 class="title">current series</h2>
+            <h3 class="title">current series</h3>
         </div>
     </main>
 </template>
@@ -22,7 +22,7 @@
             height: 300px;
             background-size: cover;
         }
-        h2 {
+        h3 {
             background-color: $text-hover;
             color: $light;
             display: inline-block;

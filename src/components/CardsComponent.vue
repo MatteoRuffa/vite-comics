@@ -17,31 +17,37 @@
 
 <style lang="scss" scoped>
     @use '../assets/style/partials/variables' as *;
-    .image {
-        padding: 20px 0;
-        img {
-        width: 100%;
-        height: 300px;
+
+    .row {
+        .image {
+            padding: 20px 0;
+            img {
+            width: 100%;
+            height: 300px;
+            }
+            img:hover {
+                cursor: pointer;
+                
+            }
+        }
+        h5 {
+            color: $light;
+            text-transform: uppercase;
+            padding: 10px 0;
+        }
+        .text-center {
+            padding: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: $light;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.2rem;
+            padding: 10px 100px;
+            background-color: $text-hover;
         }
     }
-    h5 {
-        color: $light;
-        text-transform: uppercase;
-        padding: 10px 0;
-    }
-    .text-center {
-        padding: 30px;
-    }
-    a {
-        text-decoration: none;
-        color: $light;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 1.2rem;
-        padding: 10px 100px;
-        background-color: $text-hover;
-    }
-
 
     @media screen and (max-width: 1200px) {
         .image {

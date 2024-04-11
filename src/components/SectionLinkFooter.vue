@@ -109,10 +109,14 @@
             ul {
                 list-style: none;
                 padding: 0;
+                
                 a{
                     text-decoration: none;
                     color: $text-gray;
                     font-size: 0.9rem;
+                }
+                a:hover {
+                    color: $light;
                 }
             }
         }

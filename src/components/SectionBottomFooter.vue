@@ -49,6 +49,10 @@
             }
             img {
                 padding: 0 10px;
+                transition: transform 0.3s ease;
+            }
+            img:hover {
+                transform: scale(1.5);
             }
         }
         

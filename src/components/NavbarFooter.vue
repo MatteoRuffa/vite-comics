@@ -48,14 +48,21 @@
                 padding: 10px;
                 a {
                     text-decoration: none;
+                    transition: transform 0.3s ease;
                     img {
-                        width: 50px
+                        width: 50px;
+                        
                     }
+                    
                     span {
                         text-transform: uppercase;
                         color: $light;
                         padding: 0 10px;
+                        transition: transform 0.3s ease;
                     }
+                }
+                a:hover {
+                    transform: scale(1.5);
                 }
             }
         }

@@ -1,7 +1,8 @@
 <template>
     <main>
+        <div class="jumbotron"></div>
         <div class="container">
-            <h2>--> Contents goes here <--</h2> 
+            <h2 class="title">current series</h2>
         </div>
     </main>
 </template>
@@ -16,11 +17,18 @@
 @use '../assets/style/partials/variables' as *;
     main {
         background-color: $dark;
-        padding: 20px 0;
+        .jumbotron {
+            background-image: url('/img/jumbotron.jpg');
+            height: 300px;
+            background-size: cover;
+        }
         h2 {
+            background-color: $text-hover;
             color: $light;
-            padding: 20px;
-            margin: 0;
+            display: inline-block;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            transform: translateY(-50%);
         }
     }
 </style>

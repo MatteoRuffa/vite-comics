@@ -30,7 +30,7 @@ import CardsComponent from './CardsComponent.vue';
         background-color: $dark;
         .jumbotron {
             background-image: url('/img/jumbotron.jpg');
-            height: 300px;
+            height: 400px;
             background-size: cover;
         }
         h3 {

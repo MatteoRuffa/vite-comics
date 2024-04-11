@@ -8,8 +8,12 @@
 </template>
 
 <script>
+import CardsComponent from './CardsComponent.vue';
     export default {
         name: 'MainComponent',
+        components: {
+            CardsComponent
+        }
     }
 </script>
 

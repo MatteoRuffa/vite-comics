@@ -12,25 +12,15 @@
 </template>
 
 <script>
+import { navbar } from '../data/store';
     export default {
         name: 'HeaderComponent',
         data () {
             return {
-                navbar: [
-                    {name: 'Characters', link: '#'},
-                    {name: 'Comics', link: '#'},
-                    {name: 'Movies', link: '#'},
-                    {name: 'TV', link: '#'},
-                    {name: 'Games', link: '#'},
-                    {name: 'Collectibles', link: '#'},
-                    {name: 'Videos', link: '#'},
-                    {name: 'Fans', link: '#'},
-                    {name: 'News', link: '#'},
-                    {name: 'Shop', link: '#'}
-                ]   
+                navbar: navbar,
             }
         }
-    }
+    };
 </script>
 
 <style lang="scss" scoped>

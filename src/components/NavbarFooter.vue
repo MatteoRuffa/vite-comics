@@ -14,17 +14,12 @@
 </template>
 
 <script>
+import { navbarFooter } from '../data/store';
     export default {
         name: 'NavbarFooter',
         data () {
             return{
-                navbarFooter: [
-                    {name: 'digital comics', link: '#', img: '/img/buy-comics-digital-comics.png'},
-                    {name: 'dc merchandise', link: '#', img: '/img/buy-comics-merchandise.png'},
-                    {name: 'subscription', link: '#', img: '/img/buy-comics-subscriptions.png'},
-                    {name: 'comic shop locator', link: '#', img: '/img/buy-comics-shop-locator.png'},
-                    {name: 'dc power visa', link: '#', img: '/img/buy-dc-power-visa.svg'}
-                ]
+                navbarFooter: navbarFooter,
             }
         }
     }

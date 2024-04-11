@@ -3,17 +3,24 @@
         <div class="jumbotron"></div>
         <div class="container">
             <h3 class="title">current series</h3>
+            <CardsComponent :items="comics"/>
         </div>
     </main>
 </template>
 
 <script>
+import { comics } from '../data/store';
 import CardsComponent from './CardsComponent.vue';
     export default {
         name: 'MainComponent',
         components: {
-            CardsComponent
-        }
+            CardsComponent,
+        },
+        data() {
+            return {
+                comics
+            }
+        },
     }
 </script>
 

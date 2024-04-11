@@ -3,9 +3,9 @@
         <div class="container">
             <ul>
                 <li v-for="item in navbarFooter" :key="item.name">
-                    <a :href="item.link">
+                    <a class="d-flex align-items-center " :href="item.link">
                         <img :src="item.img" :alt="item.name">
-                        <span>{{ item.name }}</span>
+                        <div>{{ item.name }}</div>
                     </a>
                 </li>
             </ul>
@@ -49,7 +49,7 @@ import { navbarFooter } from '../data/store';
                         
                     }
                     
-                    span {
+                    div {
                         text-transform: uppercase;
                         color: $light;
                         padding: 0 10px;
@@ -62,4 +62,11 @@ import { navbarFooter } from '../data/store';
             }
         }
     }
+
+@media screen and (max-width: 992px) {
+    img {
+        display: none;
+    }
+    
+}
 </style>

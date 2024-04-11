@@ -27,11 +27,10 @@
             padding: 20px 0;
             img {
                 width: 100%;
-                // height: 300px;
+                height: 300px;
                 transition: opacity 0.3s ease;
                 &:hover {
                     opacity: 0.3;
-                    
                     cursor: pointer;
                 }
             }
@@ -64,12 +63,13 @@
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1400px) {
         .image {
-        img {
-            height: auto;
+            img {
+                height: auto!important;
+            }
         }
     }
-    }
+   
     
 </style>
